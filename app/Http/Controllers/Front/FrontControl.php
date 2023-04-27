@@ -15,7 +15,7 @@ class FrontControl extends Controller
 {
     
     public function __construct(AyarlarModel $ayarlarModel){
-        $record = $ayarlarModel->where('id', 27)->where('activ', 0)->first();
+        $record = $ayarlarModel->where('id', 1)->where('activ', 0)->first();
         if ($record) {
             abort(404);
         }
